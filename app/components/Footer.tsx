@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <p className="mb-4 md:mb-0 text-lg">&copy; {currentYear} TaskMate. All rights reserved.</p>
+          <p className="mb-4 md:mb-0 text-lg">&copy; {currentYear} TaskMate. All rights reserved. Powered by Pledge & Grow 📈</p>
           <div className="flex space-x-6">
             <a
               href="https://x.com/TaskMate_IA"
