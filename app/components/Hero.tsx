@@ -35,9 +35,10 @@ export default function Hero() {
       <Link href="/call">
         <Button
           size="lg"
-          className="bg-primary text-primary-foreground hover:bg-primary/90 text-base md:text-lg lg:text-xl px-6 py-3 md:px-8 md:py-4 lg:px-10 lg:py-6"
+          className="bg-gradient-to-r from-purple-800 to-fuchsia-400 text-white font-semibold text-xl px-8 py-4 flex items-center gap-2 hover:from-purple-900 to-fuchsia-500 transition duration-300 ease-in-out shadow-md"
         >
-          Book a Free Consultation
+          Book intro call
+          <span className="text-2xl"></span> {/* Arrow icon */}
         </Button>
       </Link>
       </div>

@@ -56,7 +56,7 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Link href="/call">
-              <Button className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 text-lg md:text-xl px-6 py-3">
+              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden md:inline-flex bg-primary text-primary-foreground hover:from-purple-900 to-fuchsia-500 text-lg md:text-xl px-6 py-3">
                 Book Intro Call
               </Button>
             </Link>
