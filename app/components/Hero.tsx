@@ -25,7 +25,7 @@ export default function Hero() {
 
   return (
     <div className="mt-10 text-center pt-16 pb-24 md:pt-24 md:pb-32 lg:pt-32 lg:pb-40">
-      <h1 className="sm:text-5xl md:text-5xl lg:text-5xl xl:text-6xl font-bold mb-10 pt-8 ">
+      <h1 className="text-5xl xl:text-6xl font-bold mb-10 pt-8 ">
         {typedText || fullText}
       </h1>
       <p className="text-lg md:text-xl lg:text-xl mb-12 max-w-5xl mx-auto text-muted-foreground">
