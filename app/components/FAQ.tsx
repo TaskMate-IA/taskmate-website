@@ -5,44 +5,44 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function FAQ() {
   const faqItems = [
     {
-      question: "Why choose TaskMate instead of hiring a COO?",
+      question: "Pourquoi faire ça plutôt que d'embaucher un COO?",
       answer:
-        "TaskMate offers several advantages over hiring a traditional COO. First, our AI-driven solution provides 24/7 availability, ensuring your operations run smoothly around the clock. Second, TaskMate is significantly more cost-effective, with no need for a high executive salary, benefits, or office space. Third, our system is infinitely scalable and can adapt to your business needs instantly, something a human COO cannot do. Lastly, TaskMate brings cutting-edge AI and automation technologies to your business, keeping you at the forefront of operational efficiency.",
+        "Recruter un COO compétent prend des mois et coûte une fortune. En plus, il faut ajouter les avantages, les indemnités de départ, et il n’y a aucune garantie qu’il fournira les résultats attendus. Les modèles d’abonnement comme le nôtre sont tout simplement meilleurs, à la fois quantitativement et qualitativement, pour la majorité des entreprises générant moins de 2 M€/an : vous payez moins, obtenez des résultats plus rapidement, et vous pouvez suspendre ou annuler votre contrat à tout moment.",
     },
     {
-      question: "How cost-effective is TaskMate compared to traditional solutions?",
+      question: "Comment est-ce que je peux soumettre une demande?",
       answer:
-        "TaskMate can save businesses up to 70% compared to traditional operational costs. This significant saving comes from several factors: 1) Elimination of salaries and benefits associated with multiple full-time employees, 2) Reduction in human error and inefficiencies, 3) 24/7 operation without overtime costs, 4) Scalability without proportional cost increases, and 5) Reduction in overhead costs like office space and equipment. Moreover, TaskMate's AI-driven processes continually optimize themselves, leading to ongoing efficiency improvements and cost savings over time.",
+        "Après votre appel d’intégration de trente minutes, vous aurez accès à votre propre tableau Notion, où vous pourrez consulter et gérer les projets en cours. Pour créer une demande, il vous suffit de cliquer sur le bouton + de votre tableau et d’ajouter la tâche directement à notre file d’attente.",
     },
     {
-      question: "How does the payment structure work?",
+      question: "Que voulez-vous vraiment dire par 100% satisfait?",
       answer:
-        "TaskMate offers flexible subscription plans tailored to your business size and needs. We have three main tiers: Starter, Professional, and Enterprise. Each tier comes with monthly and annual billing options, with annual subscriptions offering a 20% discount. The Starter plan is perfect for small businesses and includes basic automation features. The Professional plan adds advanced AI capabilities and is suitable for medium-sized businesses. The Enterprise plan offers full customization and integration options for large corporations. All plans can be upgraded, downgraded, or canceled at any time, ensuring you have the flexibility to adjust as your business evolves.",
+        "Notre processus de gestion de projet prévoit un moyen simple pour demander des modifications ou des ajustements après une livraison. Si vous n’êtes pas entièrement satisfait des systèmes que vous recevez (ventes, recrutement, intégration, etc.), il vous suffit de laisser un commentaire et nous continuerons à apporter des améliorations jusqu'à ce que vous soyez pleinement satisfait.",
     },
     {
-      question: "What does 'unlimited' mean in your service offerings?",
+      question: "Comment est-ce qu'on communique?",
       answer:
-        "'Unlimited' in our service offerings means that within your chosen subscription plan, you can submit as many requests or tasks as you need without incurring additional per-task charges. This allows businesses to scale their operations without worrying about unexpected costs. However, we do have fair usage policies in place to ensure quality service for all clients. These policies are designed to prevent abuse of the system and ensure that all customers receive optimal performance. If your usage consistently exceeds our fair use limits, our team will work with you to find a more suitable plan or custom solution that meets your high-volume needs.",
+        "La grande majorité de nos échanges se fait de manière asynchrone, via Slack. Réduire le temps passé en appels nous offre beaucoup plus de flexibilité, ce qui nous permet de livrer plus de projets et d'offrir des services de meilleure qualité. Ceci dit, nous proposons en option une consultation hebdomadaire avec l’équipe opérationnelle pour discuter des points de blocage, établir les priorités et suivre l’avancement des projets.",
     },
     {
-      question: "Can TaskMate integrate with my existing tools and software?",
+      question: "À quel point est-ce vraiment plus rentable?",
       answer:
-        "Yes, TaskMate is designed with integration in mind and can seamlessly connect with a wide range of popular business tools and software. We support out-of-the-box integrations with major CRM systems (like Salesforce, HubSpot), project management tools (such as Asana, Trello, Jira), communication platforms (like Slack, Microsoft Teams), and many more. For more specialized or proprietary systems, our team of experts can develop custom integrations to ensure TaskMate fits perfectly into your existing tech stack. We use industry-standard APIs and webhooks to ensure smooth data flow between systems, allowing TaskMate to enhance and automate your existing workflows rather than disrupt them.",
+        "Quand vous prenez en compte les salaires, les avantages, les indemnités de départ et le coût d'opportunité lié au recrutement, notre service représente environ 30 % du coût d’un recrutement en interne et environ 70 % du prix d’une agence. Vous bénéficiez également de l’expertise de deux directeurs des opérations de classe mondiale ayant contribué à la croissance de plusieurs entreprises à 8 chiffres, ainsi qu’une garantie de satisfaction à 100 % et la possibilité de suspendre ou d'annuler à tout moment.",
     },
     {
-      question: "How secure is my business data with TaskMate?",
+      question: "Comment fonctionne le paiement des abonnements ?",
       answer:
-        "At TaskMate, we prioritize the security and privacy of your business data above all else. We employ multiple layers of security measures: 1) All data is encrypted both in transit and at rest using industry-standard AES-256 encryption. 2) We use secure, ISO 27001 certified data centers with 24/7 physical security. 3) Regular penetration testing and security audits are conducted by third-party cybersecurity firms. 4) We are fully compliant with GDPR, CCPA, and other relevant data protection regulations. 5) We implement strict access controls and authentication measures, including two-factor authentication for all user accounts. 6) Our system undergoes continuous monitoring for any suspicious activities or potential breaches. In the unlikely event of a security incident, we have a comprehensive incident response plan in place to mitigate risks and notify affected parties promptly.",
+        "La majorité de nos automatisations sont basées sur des abonnements mensuels, ce qui nécessite un paiement récurrent chaque mois. Une fois votre demande validée, vous recevrez un devis détaillé accompagné d’un lien Stripe sécurisé. Ce lien mettra en place un prélèvement automatique, qui sera effectué le même jour chaque mois. Chaque abonnement est entièrement flexible : vous pouvez l'annuler ou le mettre en pause à tout moment, sans frais supplémentaires. Cette approche vous garantit à la fois simplicité et liberté dans la gestion de vos services.",
     },
     {
-      question: "What kind of support does TaskMate offer?",
+      question: "Que signifie 'illimité'?",
       answer:
-        "TaskMate provides comprehensive, multi-tiered support to ensure you get the most out of our platform: 1) 24/7 Customer Support: Our team is available round-the-clock via chat, email, and phone to address any immediate concerns or questions. 2) Dedicated Account Manager: For our Professional and Enterprise clients, a dedicated account manager is assigned to oversee your account and provide personalized assistance. 3) Onboarding Support: When you sign up, our onboarding team guides you through the setup process, ensuring smooth integration with your existing systems. 4) Regular Check-ins: We conduct scheduled check-ins to review your usage, address any issues, and suggest optimizations. 5) Training Sessions: We offer both group and one-on-one training sessions to help your team maximize TaskMate's capabilities. 6) Knowledge Base: A comprehensive, regularly updated knowledge base is available with tutorials, FAQs, and best practices. 7) Community Forum: Connect with other TaskMate users to share experiences and tips. Our support isn't just reactive; we proactively work with you to ensure TaskMate is continually adding value to your business operations.",
+        "Vous pouvez soumettre un nombre illimité de demandes. La plupart de nos clients ont généralement 10 à 15 demandes en file d'attente en même temps, et leur tableau sert de liste de tâches à accomplir. Notre équipe travaille sur une demande à la fois (selon vos priorités), avec un délai moyen de réalisation compris entre 1 et 4 jours par livrable. Dès qu’une tâche est terminée, nous passons directement à la suivante. De cette façon, nous livrons souvent plus de 10 systèmes par mois (alors qu’un employé en interne en livrerait un ou deux).",
     },
     {
-      question: "Can I try TaskMate before committing to a subscription?",
+      question: "Quelle est votre politique de remboursement?",
       answer:
-        "We offer a comprehensive 14-day free trial that gives you full access to all features of our Professional plan. This trial allows you to experience firsthand how TaskMate can transform your business operations. During the trial period, you'll be able to: 1) Set up and customize TaskMate for your specific needs. 2) Integrate it with your existing tools and workflows. 3) Test all automation and AI capabilities. 4) Receive personalized onboarding and support from our team. 5) Access all training materials and resources. At the end of the trial, if you decide TaskMate is right for you, you can easily transition to a paid plan of your choice. If you need more time to evaluate, our team can discuss extending your trial on a case-by-case basis. There's no obligation to continue after the trial, and no credit card is required to start. We're confident that once you see TaskMate in action, you'll understand why it's the future of business operations.",
+        "Si vous n'êtes pas 100 % satisfait de notre service, nous continuerons à travailler gratuitement jusqu'à ce que vous le soyez.",
     },
   ]
 
@@ -50,7 +50,7 @@ export default function FAQ() {
     <section className="py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
-          FAQ ❓ 
+          FAQ❓ 
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <Accordion type="single" collapsible className="w-full">
@@ -74,7 +74,7 @@ export default function FAQ() {
                 <AccordionTrigger className="text-left text-xl hover:text-primary transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lg text-muted-foreground">
+                <AccordionContent className="text-lg  text-muted-foreground">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>

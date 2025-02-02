@@ -5,27 +5,34 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 export default function CaseStudies() {
   const caseStudies = [
     {
-      title: "SaaS Startup Scaling",
-      description: "Revenue growth case study",
-      metric: "250% increase in MRR",
+      title: "Croissance d'une Startup SaaS",
+      description: "Automatisation des interactions client avec des agents IA personnalisés",
+      metric: "+250% de MRR",
     },
     {
-      title: "Agency Efficiency Boost",
-      description: "AI-driven client retention success",
-      metric: "40% improvement in client satisfaction",
+      title: "Efficacité d'une Agence Immobilière",
+      description: "Automatisation de la prospection commerciale et du suivi des leads",
+      metric: "+45 % de taux de conversion client",
     },
     {
-      title: "E-commerce Automation",
-      description: "Order processing & fulfillment automation",
-      metric: "70% reduction in processing time",
+      title: "Automatisation d'une Clinique Dentaire",
+      description: "Système de gestion des rendez-vous et automatisation administrative",
+      metric: "+25 % de nouveaux patients",
     },
+    /*
+    {
+      title: "Boost des Réservations pour un Hôtel",
+      description: "Système de réception digitale interactive et optimisation des réservations",
+      metric: "+15 % de réservations directes",
+    },
+    */
   ]
 
   return (
     <div className="py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
-          📈 How We've Helped Businesses Grow
+          📈 Notre impact sur nos clients
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
@@ -42,7 +49,7 @@ export default function CaseStudies() {
               </CardContent>
               <CardFooter>
                 <Button variant="link" className="text-primary hover:text-primary/80 p-0 text-base md:text-lg">
-                  Read Case Study <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+                Lire l’étude de cas <ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
                 </Button>
               </CardFooter>
             </Card>

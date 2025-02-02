@@ -43,7 +43,9 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <Footer />
+      <section className="mt-10 rounded-xl border border-gray-200 p-6 md:p-8 lg:p-10">
+        <Footer />
+      </section>
     </main>
   )
 }

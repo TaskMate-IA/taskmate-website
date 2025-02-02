@@ -6,25 +6,25 @@ export default function HowItWorks() {
     {
       icon: Rocket,
       title: "Onboarding",
-      description: "Quick 30-minute setup & consultation",
+      description: "Un appel de 30 minutes, c’est tout ce qu’il faut pour démarrer. C’est la seule étape obligatoire, et on peut le programmer dès demain pour que vous soyez opérationnel rapidement.",
     },
     {
       icon: RefreshCw,
-      title: "Integrate Workflows",
-      description: "AI seamlessly syncs with your processes",
+      title: "Ajoutez vos projets",
+      description: "Gérez facilement vos projets grâce à notre tableau Notion intuitif. Ajoutez des tâches, laissez des commentaires, ou confiez-nous directement la gestion des tâches.",
     },
     {
       icon: TrendingUp,
-      title: "Continuous Optimization",
-      description: "Weekly performance reviews & improvements",
+      title: "Consultations hebdomadaires",
+      description: "Pour aller plus loin, nous proposons (en option) des consultations hebdomadaires de 45 minutes. L’occasion idéale pour brainstormer, lever les blocages et optimiser vos projets en continu.",
     },
   ]
 
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
-          🔧 Your Path to AI-Powered Productivity
+        <h2 className="md:text-5xl lg:text-5xl font-bold mb-16 text-center text-black dark:text-white">
+          🔧 Notre processus simplifié
         </h2>
         <div className="relative">
           {/* Connecting line */}
@@ -43,10 +43,10 @@ export default function HowItWorks() {
                       <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
                         <step.icon className="w-6 h-6 text-primary dark:text-white" />
                       </div>
-                      <CardTitle className="text-2xl mb-2 dark:text-white">{step.title}</CardTitle>
+                      <CardTitle className="md:text-2xl lg:text-2xl mb-2 dark:text-white">{step.title}</CardTitle>
                     </CardHeader>
                     <CardContent>
-                      <p className="text-xl text-muted-foreground dark:text-gray-300">{step.description}</p>
+                      <p className="text-lg text-muted-foreground dark:text-gray-300">{step.description}</p>
                     </CardContent>
                   </Card>
                 </div>

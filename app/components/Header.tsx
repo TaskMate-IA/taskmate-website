@@ -38,7 +38,7 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="text-lg md:text-lg hover:text-primary transition-colors">
+            <Link href="#" className="text-lg md:text-md hover:text-primary transition-colors">
               Case Studies
             </Link>
             <Link href="#" className="text-lg md:text-lg hover:text-primary transition-colors">
@@ -56,8 +56,8 @@ export default function Header() {
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Link href="/call">
-              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden md:inline-flex bg-primary text-primary-foreground hover:from-purple-900 to-fuchsia-500 text-lg md:text-xl px-6 py-3">
-                Book Intro Call
+              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden md:inline-flex bg-primary text-primary-foreground hover:from-purple-600 hover:to-fuchsia-300 text-lg md:text-xl px-6 py-3">
+              Réservez un appel d'intro
               </Button>
             </Link>
             <button className="md:hidden" onClick={toggleMenu}>
