@@ -62,7 +62,7 @@ export default function Contact() {
               
               {/* Left Section - Text Content */}
               <div className="w-full md:w-1/3 text-left space-y-6">
-                <h1 className="text-3xl md:text-5xl font-bold leading-tight">📩 Entrons en Contact !</h1>
+                <h1 className="text-3xl md:text-5xl font-bold leading-tight">Entrons en Contact! 📩 </h1>
                 <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
                   Une idée, un projet ou une question ? Remplissez le formulaire ci-contre et nous vous répondrons ASAP.
                 </p>
@@ -77,7 +77,7 @@ export default function Contact() {
               </div>
 
               {/* Right Section - Contact Form */}
-              <div className="w-full md:w-2/3">
+              <div className="w-full md:w-3/5">
                 <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <Input
