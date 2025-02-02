@@ -31,7 +31,7 @@ export default function BookIntroCall() {
               {/* Partie gauche : Contenu textuel */}
               <div className="w-full md:w-1/2 text-left space-y-6">
                 <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                  🚀 Construisons Ensemble Quelque Chose d’Exceptionnel !
+                  🚀 Construisons Quelque Chose d’Exceptionnel !
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
                   Réservez un appel d’introduction rapide pour discuter de vos besoins. 

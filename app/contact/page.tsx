@@ -59,41 +59,44 @@ export default function Contact() {
         <div className="container mx-auto px-4 space-y-12 md:space-y-16 lg:space-y-20">
           <section className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8 lg:p-10 bg-background">
             <div className="flex flex-col mt-20 mb-20 md:flex-row items-center md:items-start gap-10">
-              {/* Left Section */}
-              <div className="w-full md:w-1/2 text-left space-y-6">
+              
+              {/* Left Section - Text Content */}
+              <div className="w-full md:w-1/3 text-left space-y-6">
                 <h1 className="text-3xl md:text-5xl font-bold leading-tight">📩 Entrons en Contact !</h1>
                 <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
-                  Une idée, un projet ou une question ? Remplissez le formulaire ci-dessous et nous vous répondrons ASAP. 
+                  Une idée, un projet ou une question ? Remplissez le formulaire ci-contre et nous vous répondrons ASAP.
                 </p>
                 <ul className="text-lg text-gray-600 dark:text-gray-400 space-y-3">
-                  <li>✅ Des réponses rapides et personnalisées</li>
+                  <li>✅ Réponses rapides et personnalisées</li>
                   <li>✅ Ouverts aux collaborations ambitieuses</li>
                   <li>✅ Donnez vie à vos idées les plus audacieuses</li>
                 </ul>
                 <p className="text-lg font-medium text-primary">
-                  Laissez-nous un message, et construisons ensemble l’avenir de votre projet ! 👇
+                  Laissez-nous un message, et construisons l’avenir ensemble ! 👇
                 </p>
               </div>
 
               {/* Right Section - Contact Form */}
-              <div className="w-full md:w-1/2">
-                <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
+              <div className="w-full md:w-2/3">
+                <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-8 border border-gray-200 dark:border-gray-700">
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <Input
                       type="text"
                       name="name"
-                      placeholder="Votre nom"
+                      placeholder="Nom"
                       value={form.name}
                       onChange={handleChange}
                       required
+                      className="py-4 text-lg"
                     />
                     <Input
                       type="email"
                       name="email"
-                      placeholder="Votre e-mail"
+                      placeholder="E-mail"
                       value={form.email}
                       onChange={handleChange}
                       required
+                      className="py-4 text-lg"
                     />
                     <Input
                       type="text"
@@ -102,6 +105,7 @@ export default function Contact() {
                       value={form.subject}
                       onChange={handleChange}
                       required
+                      className="py-4 text-lg"
                     />
                     <Textarea
                       name="message"
@@ -109,9 +113,10 @@ export default function Contact() {
                       value={form.message}
                       onChange={handleChange}
                       required
+                      className="h-40 text-lg"
                     />
-                    <Button type="submit" className="w-full" disabled={loading}>
-                      {loading ? "Envoi en cours..." : "Envoyer le message"}
+                    <Button type="submit" className="w-full py-4 text-lg" disabled={loading}>
+                      {loading ? "Envoi en cours..." : "Envoyer! ✉️"}
                     </Button>
                   </form>
 
@@ -123,6 +128,7 @@ export default function Contact() {
                   )}
                 </div>
               </div>
+
             </div>
           </section>
         </div>
