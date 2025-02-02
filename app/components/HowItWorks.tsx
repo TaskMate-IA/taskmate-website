@@ -24,7 +24,7 @@ export default function HowItWorks() {
     <section className="py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
-          🔧 Notre processus simplifié
+          Notre processus simplifié 🔧 
         </h2>
         <div className="relative">
           {/* Connecting line */}

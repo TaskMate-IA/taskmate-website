@@ -16,28 +16,28 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md">
       <div className="container mx-auto px-4 pt-1 pb-3">
         <div className="flex items-center justify-between h-24">
-          {/* Logo with auto dark mode support */}
-          <Link href="/" className="flex items-center w-72 h-72 md:w-80 md:h-80 lg:w-96 lg:h-96">
+          {/* Logo */}
+          <Link href="/" className="flex items-center w-48">
             <Image
               src="/images/taskmate-light.png"
               alt="TaskMate Logo"
-              width={180}
-              height={70}
+              width={150}
+              height={50}
               className="block dark:hidden"
               priority
             />
             <Image
               src="/images/taskmate-dark.png"
               alt="TaskMate Logo Dark Mode"
-              width={180}
-              height={70}
+              width={150}
+              height={50}
               className="hidden dark:block"
               priority
             />
           </Link>
 
-          {/* Navigation - Hidden on medium screens and below */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          {/* Centered Navigation */}
+          <nav className="hidden lg:flex flex-1 justify-center items-center space-x-8 whitespace-nowrap">
             <Link href="#" className="text-lg hover:text-primary transition-colors">
               Notre Processus
             </Link>
@@ -52,11 +52,11 @@ export default function Header() {
             </Link>
           </nav>
 
-          {/* Right-side actions */}
+          {/* Right-side Actions */}
           <div className="flex items-center space-x-4">
             <ThemeToggle />
             <Link href="/call">
-              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden lg:inline-flex text-white hover:from-purple-600 hover:to-fuchsia-300 text-lg px-6 py-3">
+              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden lg:inline-flex text-white hover:from-purple-600 hover:to-fuchsia-300 text-lg px-6 py-3 whitespace-nowrap">
                 Réservez un appel d'intro
               </Button>
             </Link>
@@ -67,7 +67,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Mobile Menu - Visible on medium screens and below */}
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="lg:hidden bg-background/90 backdrop-blur-sm shadow-md">
           <nav className="flex flex-col items-center space-y-4 py-4">
