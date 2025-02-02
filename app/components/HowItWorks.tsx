@@ -23,7 +23,7 @@ export default function HowItWorks() {
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
-        <h2 className="md:text-5xl lg:text-5xl font-bold mb-16 text-center text-black dark:text-white">
+        <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
           🔧 Notre processus simplifié
         </h2>
         <div className="relative">
