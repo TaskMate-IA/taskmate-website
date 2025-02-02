@@ -38,10 +38,10 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/components/CaseStudies" className="text-lg md:text-md hover:text-primary transition-colors">
+            <Link href="#"  className="text-lg md:text-md hover:text-primary transition-colors">
               Portfolio
             </Link>
-            <Link href="/components/HowItWorks" className="text-lg md:text-lg hover:text-primary transition-colors">
+            <Link href="#"  className="text-lg md:text-lg hover:text-primary transition-colors">
               Notre Processus
             </Link>
             <Link href="#" className="text-lg md:text-lg hover:text-primary transition-colors">
@@ -71,10 +71,10 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col items-center space-y-4 py-4">
-            <Link href="/components/CaseStudies" className="text-lg md:text-xl hover:text-primary transition-colors">
+            <Link href="#"  className="text-lg md:text-xl hover:text-primary transition-colors">
               Portfolio
             </Link>
-            <Link href="/components/HowItWorks" className="text-lg md:text-xl hover:text-primary transition-colors">
+            <Link href="#"  className="text-lg md:text-xl hover:text-primary transition-colors">
               Notre Processus
             </Link>
             <Link href="#" className="text-lg md:text-xl hover:text-primary transition-colors">

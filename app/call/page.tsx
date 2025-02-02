@@ -1,52 +1,53 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import Link from "next/link"
-import Header from "../components/Header"
-import Footer from "../components/Footer"
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function BookIntroCall() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 1500) // Simulate loading effect
-    return () => clearTimeout(timer)
-  }, [])
+    const timer = setTimeout(() => setIsLoading(false), 1500); // Simulation de chargement
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      {/* Header */}
+      {/* En-tête */}
       <Header />
 
-      {/* Main Section Wrapper */}
+      {/* Section principale */}
       <div className="pt-16 md:pt-20 lg:pt-24 bg-background text-gray-900 dark:text-gray-100 mt-40 mb-40">
         <div className="container mx-auto px-4 space-y-12 md:space-y-16 lg:space-y-20">
 
-          {/* Call Section with Rounded Border */}
-          <section className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8 lg:p-10 bg-backgroundshadow-lg">
+          {/* Section d'appel à l'action */}
+          <section className="rounded-xl border border-gray-200 dark:border-gray-700 p-6 md:p-8 lg:p-10 bg-background shadow-lg">
 
-            {/* Two-column layout */}
+            {/* Mise en page en deux colonnes */}
             <div className="flex flex-col md:flex-row items-center md:items-start gap-10 mt-20 mb-20">
               
-              {/* Left Section: Text Content */}
+              {/* Partie gauche : Contenu textuel */}
               <div className="w-full md:w-1/2 text-left space-y-6">
                 <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-                  🚀 Let's Build Something Great Together!
+                  🚀 Construisons Ensemble Quelque Chose d’Exceptionnel !
                 </h1>
                 <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300">
-                  Book a quick intro call to discuss your needs. Whether you’re looking for innovative solutions or a partnership, we’d love to hear from you.
+                  Réservez un appel d’introduction rapide pour discuter de vos besoins. 
+                  Que vous cherchiez des solutions innovantes ou un partenariat stratégique, nous sommes à votre écoute.
                 </p>
                 <ul className="text-lg text-gray-600 dark:text-gray-400 space-y-3">
-                  <li>✅ Explore how we can help your business</li>
-                  <li>✅ No commitment, just brainstorming</li>
-                  <li>✅ 15-minute slot, easy & efficient</li>
+                  <li>✅ Découvrez comment nous pouvons booster votre entreprise</li>
+                  <li>✅ Aucune obligation, juste un échange d’idées</li>
+                  <li>✅ Créneau de 30 minutes : simple et efficace</li>
                 </ul>
                 <p className="text-lg font-medium text-primary">
-                  Ready to get started? Pick a time that works for you below. 👇
+                  Prêt à démarrer ? Choisissez l’horaire qui vous convient ci-dessous. 👇
                 </p>
               </div>
 
-              {/* Right Section: Calendly Integration */}
+              {/* Partie droite : Intégration de Calendly */}
               <div className="w-full md:w-1/2">
                 <div className="bg-white dark:bg-gray-800 shadow-md rounded-2xl p-4 border border-gray-200 dark:border-gray-700">
                   {isLoading ? (
@@ -71,11 +72,8 @@ export default function BookIntroCall() {
         </div>
       </div>
 
-      {/* Footer */}
+      {/* Pied de page */}
       <Footer />
     </>
-  )
+  );
 }
-
-
-
