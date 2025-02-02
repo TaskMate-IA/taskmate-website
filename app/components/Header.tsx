@@ -38,17 +38,17 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="text-lg md:text-md hover:text-primary transition-colors">
-              Case Studies
+            <Link href="/components/CaseStudies" className="text-lg md:text-md hover:text-primary transition-colors">
+              Portfolio
             </Link>
-            <Link href="#" className="text-lg md:text-lg hover:text-primary transition-colors">
-              How It Works
+            <Link href="/components/HowItWorks" className="text-lg md:text-lg hover:text-primary transition-colors">
+              Notre Processus
             </Link>
             <Link href="#" className="text-lg md:text-lg hover:text-primary transition-colors">
               Blog
             </Link>
             <Link href="/contact" className="text-lg md:text-lg hover:text-primary transition-colors">
-              Contact Us
+              Contact
             </Link>
           </nav>
 
@@ -71,21 +71,23 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden">
           <nav className="flex flex-col items-center space-y-4 py-4">
-            <Link href="/case-studies" className="text-lg md:text-xl hover:text-primary transition-colors">
-              Case Studies
+            <Link href="/components/CaseStudies" className="text-lg md:text-xl hover:text-primary transition-colors">
+              Portfolio
             </Link>
-            <Link href="/how-it-works" className="text-lg md:text-xl hover:text-primary transition-colors">
-              How It Works
+            <Link href="/components/HowItWorks" className="text-lg md:text-xl hover:text-primary transition-colors">
+              Notre Processus
             </Link>
-            <Link href="/blog" className="text-lg md:text-xl hover:text-primary transition-colors">
+            <Link href="#" className="text-lg md:text-xl hover:text-primary transition-colors">
               Blog
             </Link>
             <Link href="/contact" className="text-lg md:text-xl hover:text-primary transition-colors">
-              Contact Us
+              Contact
             </Link>
-            <Button className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg md:text-xl px-6 py-3">
-              Book Intro Call
-            </Button>
+            <Link href="/call">
+              <Button className="bg-gradient-to-r from-purple-800 to-fuchsia-400 hidden md:inline-flex bg-primary text-primary-foreground hover:from-purple-600 hover:to-fuchsia-300 text-lg md:text-xl px-6 py-3">
+              Réservez un appel d'intro
+              </Button>
+            </Link>
           </nav>
         </div>
       )}

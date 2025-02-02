@@ -1,18 +1,18 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { Bot, Users, Mail, Rocket, UserPlus, FileText } from "lucide-react"
+import { Bot, Users, Mail, UserPlus, FileText, Waypoints } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 
 export default function Services() {
   const [visibleServices, setVisibleServices] = useState(0)
   const services = [
-    { icon: Bot, title: "Automated Task Management", description: "AI-assisted workflow automation." },
-    { icon: Users, title: "Smart CRM Integration", description: "Sales and client management made seamless." },
-    { icon: Mail, title: "AI Lead Nurturing", description: "Smart follow-ups and lead conversion." },
-    { icon: Rocket, title: "Project Optimization", description: "Agile project tracking with AI insights." },
-    { icon: UserPlus, title: "Talent & Hiring Automation", description: "AI-powered recruitment & evaluation." },
-    { icon: FileText, title: "SOPs & Knowledge Base", description: "Access to high-level business templates." },
+    { icon: Mail, title: "Génération de leads", description: "Des systèmes outbound et marketing évolutifs pour faire croître votre entreprise en pilote automatique." },
+    { icon: Users, title: "Systèmes internes", description: "Centralisez vos opérations et votre gestion des connaissances avec des outils automatisés performants." },
+    { icon: FileText, title: "Automatisation administrative", description: "Des solutions intelligentes qui gèrent vos tâches administratives et contractuelles sans effort." },
+    { icon: Bot, title: "Exécution IA", description: "L’intelligence artificielle qui automatise les étapes clés de votre processus d’exécution pour réduire vos coûts de personnel." },
+    { icon: UserPlus, title: "Déploiement CRM", description: "Des systèmes de vente pour suivre, itérer et scaler votre croissance, à l’image d’une entreprise à 8 chiffres." },
+    { icon: Waypoints, title: "Systèmes de recrutement", description: "Des processus automatisés qui identifient, contactent et évaluent vos candidats" },
   ]
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function Services() {
   return (
     <div className="py-24">
       <div className="container mx-auto px-4">
-        <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">🛠️ What TaskMate Offers</h2>
+        <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">🛠️ Ce que nos clients reçoivent</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card
