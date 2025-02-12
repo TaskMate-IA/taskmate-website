@@ -1,0 +1,21 @@
+{
+    "title": "Get in Touch! 📩",
+    "description": "Have an idea, a project, or a question? Fill out the form and we’ll get back to you ASAP.",
+    "list": [
+      "✅ Fast, personalized responses",
+      "✅ Open to ambitious collaborations",
+      "✅ Bring your boldest ideas to life"
+    ],
+    "finalMessage": "Leave us a message, and let’s build the future together! 👇",
+    "placeholders": {
+      "name": "Name",
+      "email": "E-mail",
+      "subject": "Subject",
+      "message": "Your message"
+    },
+    "buttonText": "Send! ✉️",
+    "loadingButtonText": "Sending...",
+    "successMessage": "🎉 Message sent successfully!",
+    "errorMessage": "An error occurred. Please try again later."
+  }
+  

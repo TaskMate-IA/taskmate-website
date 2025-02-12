@@ -1,0 +1,38 @@
+{
+    "heading": "FAQ❓",
+    "faqItems": [
+      {
+        "question": "Why choose this instead of hiring a COO?",
+        "answer": "Hiring a competent COO takes months and costs a fortune. Moreover, you have to add benefits, severance packages, and there’s no guarantee they will deliver the expected results. Our subscription models are simply better, both quantitatively and qualitatively, for most companies generating less than €2M/year: you pay less, get results faster, and you can suspend or cancel your contract at any time."
+      },
+      {
+        "question": "How can I submit a request?",
+        "answer": "After your 30-minute onboarding call, you'll have access to your own Notion board, where you can view and manage ongoing projects. To create a request, simply click the + button on your board and add the task directly to our queue."
+      },
+      {
+        "question": "What do you really mean by 100% satisfaction?",
+        "answer": "Our project management process provides a simple way to request modifications or adjustments after delivery. If you’re not completely satisfied with the systems you receive (sales, recruitment, onboarding, etc.), just leave a comment and we’ll continue to make improvements until you are fully satisfied."
+      },
+      {
+        "question": "How do we communicate?",
+        "answer": "Most of our interactions are asynchronous, via Slack. Reducing time spent on calls gives us more flexibility, allowing us to deliver more projects and offer higher quality services. That said, we also offer an optional weekly consultation with the operations team to discuss bottlenecks, set priorities, and track project progress."
+      },
+      {
+        "question": "How cost-effective is it?",
+        "answer": "When you factor in salaries, benefits, severance packages, and the opportunity cost of hiring, our service costs about 30% of what an in-house recruitment would cost and roughly 70% of the price of an agency. You also benefit from the expertise of two world-class operations directors who have contributed to the growth of several 8-figure companies, along with a 100% satisfaction guarantee and the ability to suspend or cancel at any time."
+      },
+      {
+        "question": "How does subscription payment work?",
+        "answer": "Most of our automations are based on monthly subscriptions, which require a recurring monthly payment. Once your request is approved, you’ll receive a detailed quote along with a secure Stripe link. This link will set up an automatic payment on the same day each month. Each subscription is fully flexible—you can cancel or pause it at any time without extra fees. This approach ensures simplicity and freedom in managing your services."
+      },
+      {
+        "question": "What does 'unlimited' mean?",
+        "answer": "You can submit an unlimited number of requests. Most of our clients typically have 10 to 15 requests in the queue at any given time, and their board acts as a task list. Our team works on one request at a time (according to your priorities), with an average turnaround of 1 to 4 days per deliverable. Once a task is completed, we immediately move on to the next. This way, we often deliver more than 10 systems per month (whereas an in-house employee might deliver one or two)."
+      },
+      {
+        "question": "What is your refund policy?",
+        "answer": "If you’re not 100% satisfied with our service, we will continue working for free until you are."
+      }
+    ]
+  }
+  

@@ -1,0 +1,21 @@
+{
+    "heading": "Our Simplified Process 🔧",
+    "steps": [
+      {
+        "icon": "Rocket",
+        "title": "Onboarding",
+        "description": "A 30-minute call is all it takes to get started. It’s the only mandatory step, and we can schedule it as early as tomorrow so you can be up and running quickly."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Add Your Projects",
+        "description": "Easily manage your projects with our intuitive Notion dashboard. Add tasks, leave comments, or even let us handle task management for you."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Weekly Consultations",
+        "description": "To take it further, we offer (optional) 45-minute weekly consultations. The perfect opportunity to brainstorm, overcome obstacles, and continuously optimize your projects."
+      }
+    ]
+  }
+  

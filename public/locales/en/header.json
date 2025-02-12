@@ -1,0 +1,19 @@
+{
+    "logo": {
+      "light": "/images/taskmate-light.png",
+      "dark": "/images/taskmate-dark.png",
+      "altLight": "TaskMate Logo",
+      "altDark": "TaskMate Logo Dark Mode"
+    },
+    "navLinks": [
+      { "label": "Our Process", "url": "#" },
+      { "label": "Portfolio", "url": "#" },
+      { "label": "Blog", "url": "#" },
+      { "label": "Contact", "url": "/contact" }
+    ],
+    "cta": {
+      "label": "Book an intro call",
+      "url": "/call"
+    }
+  }
+  

@@ -1,0 +1,35 @@
+{
+    "heading": "💬 Comment on se positionne?",
+    "blockquote": "\"TaskMate a transformé nos opérations grâce à l'automatisation et à l'IA – un véritable atout pour notre succès!\"",
+    "comparisonData": [
+      {
+        "category": "Coût",
+        "freelancers": "Moyen",
+        "inHouse": "Élevé",
+        "agencies": "Élevé",
+        "taskMate": "Faible"
+      },
+      {
+        "category": "Niveau de compétence",
+        "freelancers": "Variable",
+        "inHouse": "Moyen",
+        "agencies": "Élevé",
+        "taskMate": "Élevé"
+      },
+      {
+        "category": "Vitesse",
+        "freelancers": "Moyen",
+        "inHouse": "Lent",
+        "agencies": "Moyen",
+        "taskMate": "Rapide"
+      },
+      {
+        "category": "Flexibilité",
+        "freelancers": "Élevé",
+        "inHouse": "Faible",
+        "agencies": "Moyen",
+        "taskMate": "Élevé"
+      }
+    ]
+  }
+  

@@ -1,0 +1,36 @@
+{
+    "heading": "Ce que nos clients reçoivent 🛠️",
+    "services": [
+      {
+        "icon": "Mail",
+        "title": "Génération de leads",
+        "description": "Des systèmes outbound et marketing évolutifs pour faire croître votre entreprise en pilote automatique."
+      },
+      {
+        "icon": "Users",
+        "title": "Systèmes internes",
+        "description": "Centralisez vos opérations et votre gestion des connaissances avec des outils automatisés performants."
+      },
+      {
+        "icon": "FileText",
+        "title": "Automatisation administrative",
+        "description": "Des solutions intelligentes qui gèrent vos tâches administratives et contractuelles sans effort."
+      },
+      {
+        "icon": "Bot",
+        "title": "Exécution IA",
+        "description": "L’intelligence artificielle qui automatise les étapes clés de votre processus d’exécution pour réduire vos coûts de personnel."
+      },
+      {
+        "icon": "UserPlus",
+        "title": "Déploiement CRM",
+        "description": "Des systèmes de vente pour suivre, itérer et scaler votre croissance, à l’image d’une entreprise à 8 chiffres."
+      },
+      {
+        "icon": "Waypoints",
+        "title": "Systèmes de recrutement",
+        "description": "Des processus automatisés qui identifient, contactent et évaluent vos candidats."
+      }
+    ]
+  }
+  

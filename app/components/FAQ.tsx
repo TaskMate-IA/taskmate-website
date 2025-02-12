@@ -1,60 +1,60 @@
-"use client"
+"use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
+import { useLanguage } from "../context/LanguageContext"; // Adjust the path as needed
+import { useState, useEffect } from "react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface FAQContent {
+  heading: string;
+  faqItems: FAQItem[];
+}
 
 export default function FAQ() {
-  const faqItems = [
-    {
-      question: "Pourquoi faire ça plutôt que d'embaucher un COO?",
-      answer:
-        "Recruter un COO compétent prend des mois et coûte une fortune. En plus, il faut ajouter les avantages, les indemnités de départ, et il n’y a aucune garantie qu’il fournira les résultats attendus. Les modèles d’abonnement comme le nôtre sont tout simplement meilleurs, à la fois quantitativement et qualitativement, pour la majorité des entreprises générant moins de 2 M€/an : vous payez moins, obtenez des résultats plus rapidement, et vous pouvez suspendre ou annuler votre contrat à tout moment.",
-    },
-    {
-      question: "Comment est-ce que je peux soumettre une demande?",
-      answer:
-        "Après votre appel d’intégration de trente minutes, vous aurez accès à votre propre tableau Notion, où vous pourrez consulter et gérer les projets en cours. Pour créer une demande, il vous suffit de cliquer sur le bouton + de votre tableau et d’ajouter la tâche directement à notre file d’attente.",
-    },
-    {
-      question: "Que voulez-vous vraiment dire par 100% satisfait?",
-      answer:
-        "Notre processus de gestion de projet prévoit un moyen simple pour demander des modifications ou des ajustements après une livraison. Si vous n’êtes pas entièrement satisfait des systèmes que vous recevez (ventes, recrutement, intégration, etc.), il vous suffit de laisser un commentaire et nous continuerons à apporter des améliorations jusqu'à ce que vous soyez pleinement satisfait.",
-    },
-    {
-      question: "Comment est-ce qu'on communique?",
-      answer:
-        "La grande majorité de nos échanges se fait de manière asynchrone, via Slack. Réduire le temps passé en appels nous offre beaucoup plus de flexibilité, ce qui nous permet de livrer plus de projets et d'offrir des services de meilleure qualité. Ceci dit, nous proposons en option une consultation hebdomadaire avec l’équipe opérationnelle pour discuter des points de blocage, établir les priorités et suivre l’avancement des projets.",
-    },
-    {
-      question: "À quel point est-ce vraiment plus rentable?",
-      answer:
-        "Quand vous prenez en compte les salaires, les avantages, les indemnités de départ et le coût d'opportunité lié au recrutement, notre service représente environ 30 % du coût d’un recrutement en interne et environ 70 % du prix d’une agence. Vous bénéficiez également de l’expertise de deux directeurs des opérations de classe mondiale ayant contribué à la croissance de plusieurs entreprises à 8 chiffres, ainsi qu’une garantie de satisfaction à 100 % et la possibilité de suspendre ou d'annuler à tout moment.",
-    },
-    {
-      question: "Comment fonctionne le paiement des abonnements ?",
-      answer:
-        "La majorité de nos automatisations sont basées sur des abonnements mensuels, ce qui nécessite un paiement récurrent chaque mois. Une fois votre demande validée, vous recevrez un devis détaillé accompagné d’un lien Stripe sécurisé. Ce lien mettra en place un prélèvement automatique, qui sera effectué le même jour chaque mois. Chaque abonnement est entièrement flexible : vous pouvez l'annuler ou le mettre en pause à tout moment, sans frais supplémentaires. Cette approche vous garantit à la fois simplicité et liberté dans la gestion de vos services.",
-    },
-    {
-      question: "Que signifie 'illimité'?",
-      answer:
-        "Vous pouvez soumettre un nombre illimité de demandes. La plupart de nos clients ont généralement 10 à 15 demandes en file d'attente en même temps, et leur tableau sert de liste de tâches à accomplir. Notre équipe travaille sur une demande à la fois (selon vos priorités), avec un délai moyen de réalisation compris entre 1 et 4 jours par livrable. Dès qu’une tâche est terminée, nous passons directement à la suivante. De cette façon, nous livrons souvent plus de 10 systèmes par mois (alors qu’un employé en interne en livrerait un ou deux).",
-    },
-    {
-      question: "Quelle est votre politique de remboursement?",
-      answer:
-        "Si vous n'êtes pas 100 % satisfait de notre service, nous continuerons à travailler gratuitement jusqu'à ce que vous le soyez.",
-    },
-  ]
+  // Use the language value from your context.
+  const { language } = useLanguage(); // "fr" or "en"
+  const [content, setContent] = useState<FAQContent | null>(null);
+
+  useEffect(() => {
+    // Fetch the FAQ JSON file based on the language from context.
+    fetch(`/locales/${language}/faq.json`)
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+      })
+      .then((data: FAQContent) => setContent(data))
+      .catch((err) => console.error("Error loading FAQ content:", err));
+  }, [language]);
+
+  if (!content) {
+    return <div>Loading...</div>;
+  }
+
+  // Split FAQ items into two columns
+  const half = Math.ceil(content.faqItems.length / 2);
+  const firstColumn = content.faqItems.slice(0, half);
+  const secondColumn = content.faqItems.slice(half);
 
   return (
     <section className="py-24">
       <div className="container mx-auto px-4">
         <h2 className="text-5xl font-bold mb-16 text-center text-black dark:text-white">
-          FAQ❓ 
+          {content.heading}
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           <Accordion type="single" collapsible className="w-full">
-            {faqItems.slice(0, Math.ceil(faqItems.length / 2)).map((item, index) => (
+            {firstColumn.map((item, index) => (
               <AccordionItem key={index} value={`item-${index}`}>
                 <AccordionTrigger className="text-left text-xl hover:text-primary transition-colors">
                   {item.question}
@@ -66,15 +66,15 @@ export default function FAQ() {
             ))}
           </Accordion>
           <Accordion type="single" collapsible className="w-full">
-            {faqItems.slice(Math.ceil(faqItems.length / 2)).map((item, index) => (
+            {secondColumn.map((item, index) => (
               <AccordionItem
-                key={index + Math.ceil(faqItems.length / 2)}
-                value={`item-${index + Math.ceil(faqItems.length / 2)}`}
+                key={index + half}
+                value={`item-${index + half}`}
               >
                 <AccordionTrigger className="text-left text-xl hover:text-primary transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lg  text-muted-foreground">
+                <AccordionContent className="text-lg text-muted-foreground">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
@@ -83,6 +83,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-  )
+  );
 }
-

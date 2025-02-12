@@ -1,0 +1,21 @@
+{
+    "heading": "Notre processus simplifié 🔧",
+    "steps": [
+      {
+        "icon": "Rocket",
+        "title": "Onboarding",
+        "description": "Un appel de 30 minutes, c’est tout ce qu’il faut pour démarrer. C’est la seule étape obligatoire, et on peut le programmer dès demain pour que vous soyez opérationnel rapidement."
+      },
+      {
+        "icon": "RefreshCw",
+        "title": "Ajoutez vos projets",
+        "description": "Gérez facilement vos projets grâce à notre tableau Notion intuitif. Ajoutez des tâches, laissez des commentaires, ou confiez-nous directement la gestion des tâches."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Consultations hebdomadaires",
+        "description": "Pour aller plus loin, nous proposons (en option) des consultations hebdomadaires de 45 minutes. L’occasion idéale pour brainstormer, lever les blocages et optimiser vos projets en continu."
+      }
+    ]
+  }
+  

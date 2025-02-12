@@ -1,0 +1,21 @@
+{
+    "title": "Entrons en Contact! 📩",
+    "description": "Une idée, un projet ou une question ? Remplissez le formulaire ci-contre et nous vous répondrons ASAP.",
+    "list": [
+      "✅ Réponses rapides et personnalisées",
+      "✅ Ouverts aux collaborations ambitieuses",
+      "✅ Donnez vie à vos idées les plus audacieuses"
+    ],
+    "finalMessage": "Laissez-nous un message, et construisons l’avenir ensemble ! 👇",
+    "placeholders": {
+      "name": "Nom",
+      "email": "E-mail",
+      "subject": "Sujet",
+      "message": "Votre message"
+    },
+    "buttonText": "Envoyer! ✉️",
+    "loadingButtonText": "Envoi en cours...",
+    "successMessage": "🎉 Message envoyé avec succès !",
+    "errorMessage": "Une erreur est survenue. Veuillez réessayer plus tard."
+  }
+  

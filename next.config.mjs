@@ -7,6 +7,10 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  i18n: {
+    locales: ['fr', 'en'],  // Liste des langues disponibles
+    defaultLocale: 'fr',    // Langue par défaut
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },

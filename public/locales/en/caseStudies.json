@@ -1,0 +1,21 @@
+{
+  "heading": "📈 Our Impact on Our Clients",
+  "studies": [
+    {
+      "title": "Growth of a SaaS Startup",
+      "description": "Automation of customer interactions using custom AI agents",
+      "metric": "+250% MRR"
+    },
+    {
+      "title": "Efficiency of a Real Estate Agency",
+      "description": "Automation of commercial prospecting and lead follow-up",
+      "metric": "+45% conversion rate"
+    },
+    {
+      "title": "Automation for a Dental Clinic",
+      "description": "Appointment management system and administrative automation",
+      "metric": "+25% new patients"
+    }
+  ],
+  "buttonText": "Read the case study"
+}

@@ -1,0 +1,31 @@
+{
+    "sections": [
+      {
+        "title": "General",
+        "links": [
+          { "label": "About Us", "url": "#" },
+          { "label": "Team", "url": "#" },
+          { "label": "Blog", "url": "#" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Portfolio", "url": "#" },
+          { "label": "FAQ", "url": "#" }
+        ]
+      },
+      {
+        "title": "Legal",
+        "links": [
+          { "label": "Privacy Policy", "url": "#" },
+          { "label": "Terms and Conditions", "url": "#" }
+        ]
+      }
+    ],
+    "bottom": {
+      "text": "© %YEAR% TaskMate. All rights reserved.",
+      "poweredBy": "Powered by Pledge & Grow 📈"
+    }
+  }
+  

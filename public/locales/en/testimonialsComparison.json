@@ -1,0 +1,35 @@
+{
+    "heading": "💬 How Do We Compare?",
+    "blockquote": "\"TaskMate transformed our operations through automation and AI – a true asset for our success!\"",
+    "comparisonData": [
+      {
+        "category": "Cost",
+        "freelancers": "Average",
+        "inHouse": "High",
+        "agencies": "High",
+        "taskMate": "Low"
+      },
+      {
+        "category": "Skill level",
+        "freelancers": "Variable",
+        "inHouse": "Average",
+        "agencies": "High",
+        "taskMate": "High"
+      },
+      {
+        "category": "Speed",
+        "freelancers": "Average",
+        "inHouse": "Slow",
+        "agencies": "Average",
+        "taskMate": "Fast"
+      },
+      {
+        "category": "Flexibility",
+        "freelancers": "High",
+        "inHouse": "Low",
+        "agencies": "Average",
+        "taskMate": "High"
+      }
+    ]
+  }
+  

@@ -1,20 +1,25 @@
-import dynamic from "next/dynamic"
-import Header from "./components/Header"
-import OperationsAsService from "./components/OperationsAsService"
-import Services from "./components/Services"
-import TestimonialsComparison from "./components/TestimonialsComparison"
-import CaseStudies from "./components/CaseStudies"
-import HowItWorks from "./components/HowItWorks"
-import FAQ from "./components/FAQ"
-import FinalCTA from "./components/FinalCTA"
-import Footer from "./components/Footer"
+import dynamic from "next/dynamic";
+import Header from "./components/Header";
+import OperationsAsService from "./components/OperationsAsService";
+import Services from "./components/Services";
+import TestimonialsComparison from "./components/TestimonialsComparison";
+import CaseStudies from "./components/CaseStudies";
+import HowItWorks from "./components/HowItWorks";
+import FAQ from "./components/FAQ";
+import FinalCTA from "./components/FinalCTA";
+import Footer from "./components/Footer";
+import LanguageSwitcher from "./components/LanguageSwitcher"; // Ensure the path is correct
 
-const DynamicHero = dynamic(() => import("./components/Hero"), { ssr: false })
+const DynamicHero = dynamic(() => import("./components/Hero"), { ssr: false });
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background text-foreground">
+    <main className="min-h-screen bg-background text-foreground relative">
       <Header />
+
+      {/* LanguageSwitcher appears just under the header and currently scrolls with the page.
+          To restore fixed positioning (i.e., have it always visible), update its CSS classes inside LanguageSwitcher. */}
+      <LanguageSwitcher/>
       <div className="pt-16 md:pt-20 lg:pt-24">
         <div className="container mx-auto px-4 space-y-12 md:space-y-16 lg:space-y-20">
           <section className="rounded-xl border border-gray-200 p-6 md:p-8 lg:p-10">
@@ -47,6 +52,5 @@ export default function Home() {
         <Footer />
       </section>
     </main>
-  )
+  );
 }
-

@@ -1,0 +1,21 @@
+{
+  "heading": "📈 Notre impact sur nos clients",
+  "studies": [
+    {
+      "title": "Croissance d'une Startup SaaS",
+      "description": "Automatisation des interactions client avec des agents IA personnalisés",
+      "metric": "+250% de MRR"
+    },
+    {
+      "title": "Efficacité d'une Agence Immobilière",
+      "description": "Automatisation de la prospection commerciale et du suivi des leads",
+      "metric": "+45 % de taux de conversion client"
+    },
+    {
+      "title": "Automatisation d'une Clinique Dentaire",
+      "description": "Système de gestion des rendez-vous et automatisation administrative",
+      "metric": "+25 % de nouveaux patients"
+    }
+  ],
+  "buttonText": "Lire l’étude de cas"
+}

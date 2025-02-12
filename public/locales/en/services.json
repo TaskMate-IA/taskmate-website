@@ -1,0 +1,36 @@
+{
+    "heading": "What Our Clients Receive 🛠️",
+    "services": [
+      {
+        "icon": "Mail",
+        "title": "Lead Generation",
+        "description": "Scalable outbound and marketing systems to grow your business on autopilot."
+      },
+      {
+        "icon": "Users",
+        "title": "Internal Systems",
+        "description": "Centralize your operations and knowledge management with powerful automated tools."
+      },
+      {
+        "icon": "FileText",
+        "title": "Administrative Automation",
+        "description": "Smart solutions that effortlessly handle your administrative and contractual tasks."
+      },
+      {
+        "icon": "Bot",
+        "title": "AI Execution",
+        "description": "Artificial intelligence that automates key steps in your execution process to reduce staffing costs."
+      },
+      {
+        "icon": "UserPlus",
+        "title": "CRM Deployment",
+        "description": "Sales systems to track, iterate, and scale your growth, just like an 8‑figure company."
+      },
+      {
+        "icon": "Waypoints",
+        "title": "Recruitment Systems",
+        "description": "Automated processes that identify, contact, and assess your candidates."
+      }
+    ]
+  }
+  
