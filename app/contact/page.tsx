@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import emailjs from "@emailjs/browser";
 import { useLanguage } from "../context/LanguageContext"; // Adjust the path as needed
+import LanguageSwitcher from "../components/LanguageSwitcher"; // Ensure the path is correct
 
 export interface ContactContent {
   title: string;
@@ -104,7 +105,7 @@ export default function Contact() {
   return (
     <>
       <Header />
-
+      <LanguageSwitcher />
       <div className="pt-16 md:pt-20 lg:pt-24 bg-background text-gray-900 dark:text-gray-100 mt-40 mb-40">
         <div className="container mx-auto px-4 space-y-12 md:space-y-16 lg:space-y-20">
           {/* Call-to-action section */}

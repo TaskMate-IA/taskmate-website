@@ -10,12 +10,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "TaskMate",
-  description: "AI-powered productivity for your business",
+  description: "L'IA qui booste votre productivité : réinventez vos processus et propulsez votre succès.",
+  icon: "/images/logo.ico", // Corrected path to the favicon
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/images/logo.ico" sizes="any" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider>
           <LanguageProvider>

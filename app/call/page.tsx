@@ -1,10 +1,11 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext"; // Make sure this path is correct
+import LanguageSwitcher from "../components/LanguageSwitcher"; // Ensure the path is correct
+
 
 export interface BookIntroCallContent {
   title: string;
@@ -47,7 +48,7 @@ export default function BookIntroCall() {
   return (
     <>
       <Header />
-
+      <LanguageSwitcher/>
       <div className="pt-16 md:pt-20 lg:pt-24 bg-background text-gray-900 dark:text-gray-100 mt-40 mb-40">
         <div className="container mx-auto px-4 space-y-12 md:space-y-16 lg:space-y-20">
           {/* Call-to-action section */}
