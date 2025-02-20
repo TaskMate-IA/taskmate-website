@@ -66,16 +66,16 @@ export default function Header() {
             <Image
               src={content.logo.light}
               alt={content.logo.altLight}
-              width={180}
-              height={80}
+              width={165}
+              height={65}
               className="block dark:hidden"
               priority
             />
             <Image
               src={content.logo.dark}
               alt={content.logo.altDark}
-              width={180}
-              height={80}
+              width={165}
+              height={65}
               className="hidden dark:block"
               priority
             />
