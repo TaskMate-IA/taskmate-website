@@ -9,8 +9,7 @@ export default function LanguageSwitcher() {
   const switchLanguage = (lang: "fr" | "en") => {
     if (lang === language) return;
     setLanguage(lang);
-    // Optionnel : vous pouvez mettre à jour l'URL ici si nécessaire
-    // Ex. : window.history.pushState(...);
+    // On ne modifie pas l'URL, on gère uniquement via le contexte.
   };
 
   return (
@@ -39,27 +38,13 @@ export default function LanguageSwitcher() {
               }}
               aria-label="Anglais actif"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="20"
-                viewBox="0 0 60 40"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 60 40">
                 <clipPath id="t">
                   <path d="M30,20 h30 v20 z v20 h-30 z h-30 v-20 z v-20 h30 z" />
                 </clipPath>
                 <path d="M0,0 v40 h60 v-40 z" fill="#00247d" />
-                <path
-                  d="M0,0 L60,40 M60,0 L0,40"
-                  stroke="#fff"
-                  strokeWidth="6"
-                />
-                <path
-                  d="M0,0 L60,0 0,40"
-                  clipPath="url(#t)"
-                  stroke="#cf142b"
-                  strokeWidth="4"
-                />
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="6" />
+                <path d="M0,0 L60,0 0,40" clipPath="url(#t)" stroke="#cf142b" strokeWidth="4" />
                 <path d="M30,0 v40 M0,20 h60" stroke="#fff" strokeWidth="10" />
                 <path d="M30,0 v40 M0,20 h60" stroke="#cf142b" strokeWidth="6" />
               </svg>
@@ -75,12 +60,7 @@ export default function LanguageSwitcher() {
               }}
               aria-label="Passer au français"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="18"
-                viewBox="0 0 3 2"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 3 2">
                 <rect width="3" height="2" fill="#ED2939" />
                 <rect width="2" height="2" fill="#fff" />
                 <rect width="1" height="2" fill="#002395" />
@@ -101,12 +81,7 @@ export default function LanguageSwitcher() {
               }}
               aria-label="Français actif"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="18"
-                viewBox="0 0 3 2"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 3 2">
                 <rect width="3" height="2" fill="#ED2939" />
                 <rect width="2" height="2" fill="#fff" />
                 <rect width="1" height="2" fill="#002395" />
@@ -123,27 +98,13 @@ export default function LanguageSwitcher() {
               }}
               aria-label="Passer à l'anglais"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="20"
-                viewBox="0 0 60 40"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 60 40">
                 <clipPath id="t">
                   <path d="M30,20 h30 v20 z v20 h-30 z h-30 v-20 z v-20 h30 z" />
                 </clipPath>
                 <path d="M0,0 v40 h60 v-40 z" fill="#00247d" />
-                <path
-                  d="M0,0 L60,40 M60,0 L0,40"
-                  stroke="#fff"
-                  strokeWidth="6"
-                />
-                <path
-                  d="M0,0 L60,0 0,40"
-                  clipPath="url(#t)"
-                  stroke="#cf142b"
-                  strokeWidth="4"
-                />
+                <path d="M0,0 L60,40 M60,0 L0,40" stroke="#fff" strokeWidth="6" />
+                <path d="M0,0 L60,0 0,40" clipPath="url(#t)" stroke="#cf142b" strokeWidth="4" />
                 <path d="M30,0 v40 M0,20 h60" stroke="#fff" strokeWidth="10" />
                 <path d="M30,0 v40 M0,20 h60" stroke="#cf142b" strokeWidth="6" />
               </svg>
