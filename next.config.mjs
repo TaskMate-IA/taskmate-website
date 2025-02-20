@@ -1,3 +1,4 @@
+// next.config.mjs
 let userConfig = undefined
 try {
   userConfig = await import('./v0-user-next.config')
@@ -7,10 +8,11 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ['fr', 'en'],  // Liste des langues disponibles
-    defaultLocale: 'fr',    // Langue par défaut
-  },
+  // Remove the i18n field entirely:
+  // i18n: {
+  //   locales: ['fr', 'en'],
+  //   defaultLocale: 'fr',
+  // },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -30,9 +32,7 @@ const nextConfig = {
 mergeConfig(nextConfig, userConfig)
 
 function mergeConfig(nextConfig, userConfig) {
-  if (!userConfig) {
-    return
-  }
+  if (!userConfig) return
 
   for (const key in userConfig) {
     if (
