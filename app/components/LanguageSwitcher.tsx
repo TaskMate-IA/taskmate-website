@@ -9,7 +9,7 @@ export default function LanguageSwitcher() {
   const switchLanguage = (lang: "fr" | "en") => {
     if (lang === language) return;
     setLanguage(lang);
-    // Optionnel : vous pouvez mettre à jour l'URL ici si nécessaire.
+    // Optionnel : vous pouvez mettre à jour l'URL ici si nécessaire
     // Ex. : window.history.pushState(...);
   };
 
